@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="exp1_42119.js"></script>
+    <title>42119 - Area of shapes </title>
+</head>
+
+<body style="text-align:center;">
+
+    <div class="section">
+
+        <div class="circle"> 
+            <div>
+                <label for="radius">Enter radius of the circle:</label>
+                <input type="number" id="radius">
+            </div>
+
+            <br>
+
+            <button onclick="AreaCIRCLE()">Calculate Area of CIRCLE</button><br><br>
+        </div>
+
+
+        <div class="rectangle">
+            <div>
+                <label for="length">Enter the length:</label>
+                <input type="number" id="length"><br><br>
+
+                <label for="breadth">Enter the breadth:</label>
+                <input type="number" id="breadth"><br><br>
+            </div>
+
+            <button onclick="AreaRECTANGLE()">Calculate area of RECTANGLE</button><br><br>
+        </div>
+
+
+        <div class="triangle">
+            <div>
+                <label for="side1">Enter the value of side 1:</label>
+                <input type="number" id="side1">
+                <br>
+            </div>
+            <br>
+            <div>
+                <label for="side2">Enter the value of side 2:</label>
+                <input type="number" id="side2">
+                <br>
+
+            </div>
+            <br>
+            <div>
+                <label for="side3">Enter the value of side 2:</label>
+                <input type="number" id="side3">
+                <br>
+
+            </div>
+            <br>
+            <button onclick="AreaTriangle()">Calculate area of TRIANGLE</button>
+            <br><br>
+            <p>Area is: <span id="display"></span></p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
