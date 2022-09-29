@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <title>Assignment 7</title>
+    </head>
+    <h1>Append Objects</h1>
+
+    Enter object : <input id="obj" name="obj">
+
+    <p><button onclick="append()"> Append object </button></p>
+    <p><button onclick="isPresent()"> Is Element Present</button></p>
+    <p id="ans"> </p>
+
+
+
+    <script>
+    
+    var arr = [];
+
+    function append(){
+        var target = document.getElementById("obj").value;
+        arr.push(target);
+        document.getElementById("ans").innerHTML = arr; 
+     }
+
+    function isPresent(){
+        var target = document.getElementById("obj").value;
+        var flag = false;
+        for( var i = 0; i < arr.length; i++){ 
+            if (arr[i] == target) { 
+                flag = true;
+                break;
+            }
+        }
+        document.getElementById("ans").innerHTML = flag;
+    }
+
+    </script>
+
+</html> 
