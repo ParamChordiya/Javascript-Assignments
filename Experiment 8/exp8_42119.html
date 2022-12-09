@@ -1,0 +1,34 @@
+<!-- Name: Param Chordiya
+Roll Number: 42119
+Batch: P5 -->
+
+<html>
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Name - Param Chordiya<br>
+        Roll no-42119<br>
+        Batch - P5<br>
+        Class-BE5
+    </h3>
+    <br>
+    <h1>On Click and On focus Event</h1>
+    <a onmouseover="document.body.style.backgroundColor ='blue'">
+        <b style="text-decoration:underline;">Hover over me!</b></a><br>
+    <br>
+    <button class="button button1" id="btn">Click!</button>
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', function onClick(event) {
+            document.body.style.backgroundColor = '#90EE90';
+        });
+    </script>
+</body>
+
+</html>
