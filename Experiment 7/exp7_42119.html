@@ -1,0 +1,69 @@
+<!-- Name: Param Chordiya
+Roll Number: 42119
+Batch: P5 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adding object in array</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Name - Param Chordiya<br>
+        Roll no-42119<br>
+        Batch - P5<br>
+        Class-BE5
+    </h3>
+    <h1 style="color: rgb(197, 60, 19)">Append object to the array</h1>
+    <p>Click the button to add new elements to the array.</p>
+    <input type="text" id="number">
+    <button onclick="pushFunction()">Add elements</button>
+
+    <button onclick="popFunction()">Remove elements from last</button>
+
+    <button onclick="shiftFunction()">Shift elements from first</button>
+
+    <p id="ar"></p>
+    <p id="ob"></p>
+
+    <script>
+        var list = new Array();
+        document.getElementById("ar").innerHTML = list;
+        function pushFunction() {
+
+            var c = document.getElementById("number").value;
+            list.push(c);
+            document.getElementById("ar").innerHTML = list;
+            if (Array.isArray(list)) document.getElementById("ob").innerHTML = "This object is an array";
+            else document.getElementById("ob").innerHTML = "This object is not an array";
+
+        }
+        function popFunction() {
+
+            var c = document.getElementById("number").value;
+            list.pop(c);
+            document.getElementById("ar").innerHTML = list;
+            if (Array.isArray(list)) document.getElementById("ob").innerHTML = "This object is an array";
+            else document.getElementById("ob").innerHTML = "This object is not an array";
+
+        }
+
+        function shiftFunction() {
+
+            var c = document.getElementById("number").value;
+            list.shift(c);
+            document.getElementById("ar").innerHTML = list;
+            if (Array.isArray(list)) document.getElementById("ob").innerHTML = "This object is an array";
+            else document.getElementById("ob").innerHTML = "This object is not an array";
+
+        }
+    </script>
+
+</body>
+
+</html>
